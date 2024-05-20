@@ -10,7 +10,7 @@ import AdminDashboard from "./components/DashBoard/AdminDashBoard";
 import SignUp from "./components/Authentication/SignUp";
 import UserDashBoard from "./components/DashBoard/UserDashBoard";
 
-const AppRoutes = ({ isAuthenticated = false }) => {
+const AppRoutes = ({ isAuthenticated = true }) => {
   return (
     <Router>
       <Routes>

@@ -2,8 +2,12 @@ import { Button } from "@mui/material";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Popup from "../Common/Popup";
+import Banner from "../Common/Banner";
+// import makeStyles from "tss-react/mui";
+import { bannerProps } from "../../_mocks/BannerDataMock";
 
 const UserDashBoard = () => {
+
   const usePopup = () =>
     toast(
       <Popup
@@ -14,8 +18,8 @@ const UserDashBoard = () => {
     );
   return (
     <div>
-      <Button onClick={usePopup}>Test</Button>
-      <ToastContainer closeOnClick/>
+      <Banner {...bannerProps} />
+      <ToastContainer closeOnClick />
     </div>
   );
 };
